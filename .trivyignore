@@ -1,0 +1,7 @@
+# Trivy exceptions for demo-api
+# Format: CVE-ID or GHSA-ID, one per line
+# Add reason as comment
+
+# Example — uncomment to apply:
+# CVE-2023-12345  # false positive: not exploitable in our context
+# CVE-2024-99999  # vendor patch pending, review by 2025-06-01
