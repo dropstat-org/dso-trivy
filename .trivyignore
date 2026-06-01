@@ -1,7 +1,10 @@
-# Trivy exceptions for demo-api
-# Format: CVE-ID or GHSA-ID, one per line
-# Add reason as comment
-
-# Example — uncomment to apply:
-# CVE-2023-12345  # false positive: not exploitable in our context
-# CVE-2024-99999  # vendor patch pending, review by 2025-06-01
+# Trivy exceptions for gha-demo-api-ecs
+# Repo: dropstat-org/gha-demo-api-ecs
+# Branch: release/gha-demo-api-ecs
+#
+# Format: CVE-ID or GHSA-ID, one per line. Add reason as comment.
+# The pipeline picks this up automatically on every run.
+#
+# Example:
+# CVE-2024-12345  # false positive: not exploitable in our Flask context
+# GHSA-xxxx-yyyy  # vendor patch pending, review by 2025-12-31
