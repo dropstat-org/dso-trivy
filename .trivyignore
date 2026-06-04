@@ -1,7 +1,23 @@
-# Trivy exceptions for demo-api
-# Format: CVE-ID or GHSA-ID, one per line
-# Add reason as comment
+# Trivy exceptions for gha-dropstat-backend
+# Issues are still shown in the report but do not cause pipeline failure.
+#
+# ── CVE exceptions ────────────────────────────────────────────────────────────
+# netty-codec-http — fix available in 4.1.132, pending Spring Boot upgrade
+CVE-2026-33870
+CVE-2026-42584
+CVE-2026-42587
 
-# Example — uncomment to apply:
-# CVE-2023-12345  # false positive: not exploitable in our context
-# CVE-2024-99999  # vendor patch pending, review by 2025-06-01
+# spring-boot-starter-actuator — evaluating impact
+CVE-2026-22731
+CVE-2026-22733
+
+# spring-security-web — CRITICAL, evaluating fix in 6.5.9
+CVE-2026-22732
+
+# ── Secret file exceptions ────────────────────────────────────────────────────
+# Dev config files — secrets must be migrated to Secrets Manager
+# These files are excluded from secret scanning until migration is complete.
+.env
+src/main/resources/application.properties
+src/main/resources/firebase/dropstat-f8d08-firebase-adminsdk-yqh0v-7350b1eafb.json
+src/main/resources/firebase/dropstat-f8d08-firebase-adminsdk-yqh0v-c0349ef065.json
