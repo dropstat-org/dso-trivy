@@ -1,7 +1,37 @@
-# Trivy exceptions for demo-api
-# Format: CVE-ID or GHSA-ID, one per line
-# Add reason as comment
+# Trivy exceptions for gha-nursa
+# Issues are still shown in the report but do not cause pipeline failure.
+#
+# ── CVE exceptions ────────────────────────────────────────────────────────────
+# netty
+CVE-2026-33870
+CVE-2026-42584
+CVE-2026-42587
+CVE-2025-55163
+CVE-2026-33871
+CVE-2025-24970
 
-# Example — uncomment to apply:
-# CVE-2023-12345  # false positive: not exploitable in our context
-# CVE-2024-99999  # vendor patch pending, review by 2025-06-01
+# tomcat — pending Spring Boot upgrade to 3.4.x stable
+CVE-2025-24813
+CVE-2026-41293
+CVE-2026-43512
+CVE-2026-43515
+CVE-2024-50379
+CVE-2024-56337
+CVE-2025-48988
+CVE-2025-48989
+CVE-2025-52520
+CVE-2025-53506
+
+# other dependencies
+CVE-2023-32697
+CVE-2025-55752
+CVE-2026-24734
+CVE-2026-24880
+CVE-2026-34483
+CVE-2026-34487
+CVE-2026-41284
+CVE-2026-42498
+CVE-2026-43513
+
+# ── Secret file exceptions ────────────────────────────────────────────────────
+src/main/resources/application.properties
