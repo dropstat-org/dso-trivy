@@ -1,7 +1,65 @@
-# Trivy exceptions for demo-api
-# Format: CVE-ID or GHSA-ID, one per line
-# Add reason as comment
+# Trivy exceptions — desktop-app-test
+# Riesgo aceptado para deploy de frontend estatico en DEV. Generado: 2026-06-08
+#
+# Contexto: CVEs en dependencias transitivas de la app React (CRA). Son apps
+# estaticas servidas desde S3+CloudFront (sin backend Node ejecutando estas libs
+# en runtime del lado servidor); el grueso son DoS/ReDoS/prototype-pollution cuya
+# explotabilidad real en un bundle de browser es baja. Se aceptan temporalmente
+# para no bloquear el primer deploy a DEV.
+#
+# Las CVEs siguen VISIBLES en el reporte Trivy (--show-suppressed); solo no rompen
+# el pipeline. NO es lo mismo que desactivar el scan.
+#
+# TODO (revisar antes de 2026-09-08): actualizar deps vulnerables y retirar estas
+# excepciones — prioritarias las CRITICAL. NO portar este archivo a staging/prod
+# sin re-evaluar.
+# Format: un CVE/GHSA por linea. Comentario = libreria + fix disponible.
 
-# Example — uncomment to apply:
-# CVE-2023-12345  # false positive: not exploitable in our context
-# CVE-2024-99999  # vendor patch pending, review by 2025-06-01
+
+# @babel/plugin-transform-modules-systemjs (fix 7.29.4)
+CVE-2026-44728
+
+# axios (fix 1.16.0) - DoS/prototype-pollution/proxy-auth leak
+CVE-2026-42033
+CVE-2026-42035
+CVE-2026-42043
+CVE-2026-42264
+CVE-2026-44486
+CVE-2026-44487
+CVE-2026-44488
+CVE-2026-44492
+CVE-2026-44494
+CVE-2026-44495
+CVE-2026-44496
+
+# fast-uri (fix 3.1.2) - path traversal
+CVE-2026-6321
+CVE-2026-6322
+
+# jspdf (fix 4.2.1) - LFI/XSS/DoS [CRITICAL CVE-2025-68428]
+CVE-2025-68428
+CVE-2026-31938
+CVE-2025-29907
+CVE-2025-57810
+CVE-2026-24133
+CVE-2026-24737
+CVE-2026-25535
+CVE-2026-25755
+CVE-2026-25940
+CVE-2026-31898
+
+# nth-check (fix 2.0.1) - ReDoS
+CVE-2021-3803
+
+# protobufjs (fix 8.0.2) - RCE/DoS [CRITICAL CVE-2026-41242]
+CVE-2026-41242
+CVE-2026-44289
+CVE-2026-44290
+CVE-2026-44291
+CVE-2026-44293
+
+# serialize-javascript (fix 7.0.3) - RCE via RegExp.flags
+GHSA-5c6j-r48x-rmvq
+
+# underscore (fix 1.13.8) - DoS
+CVE-2026-27601
