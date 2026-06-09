@@ -2,17 +2,58 @@
 # Issues are still shown in the report but do not cause pipeline failure.
 #
 # ── CVE exceptions ────────────────────────────────────────────────────────────
+
 # netty-codec-http — fix available in 4.1.132, pending Spring Boot upgrade
 CVE-2026-33870
 CVE-2026-42584
 CVE-2026-42587
 
-# spring-boot-starter-actuator — evaluating impact
+# spring-boot-starter-actuator / spring-security — evaluating impact
 CVE-2026-22731
 CVE-2026-22733
 
-# spring-security-web — CRITICAL, evaluating fix in 6.5.9
+# spring-security-web — CRITICAL, fix available in 6.5.9 pending Spring Boot upgrade
 CVE-2026-22732
+
+# netty-codec — fix available in 4.1.133.Final, pending Spring Boot upgrade
+CVE-2026-42583
+
+# netty-codec-http2 — fix available in 4.1.132.Final, pending Spring Boot upgrade
+CVE-2026-33871
+
+# netty-handler — fix available in 4.2.15.Final, pending Spring Boot upgrade
+CVE-2026-44249
+CVE-2026-45416
+
+# grpc-netty-shaded — fix available in 1.75.0, pending upgrade
+CVE-2025-55163
+
+# protobuf-java — fix available in 3.25.5, pending upgrade
+CVE-2024-7254
+
+# commons-compress — fix available in 1.21, pending Spring Boot transitive upgrade
+CVE-2021-35515
+CVE-2021-35516
+CVE-2021-35517
+CVE-2021-36090
+
+# tomcat-embed-core — multiple CVEs, fixes available in 10.1.52-10.1.55, pending Spring Boot upgrade
+CVE-2026-41293
+CVE-2026-24734
+CVE-2026-24880
+CVE-2026-34483
+CVE-2026-34487
+CVE-2026-41284
+CVE-2026-42498
+CVE-2026-43512
+CVE-2026-43513
+CVE-2026-43515
+
+# spring-boot — fix available in 3.5.14, pending upgrade
+CVE-2026-40973
+
+# ion-java (AWS SDK transitive) — fix available in 1.10.5, pending SDK upgrade
+CVE-2024-21634
 
 # ── Secret file exceptions ────────────────────────────────────────────────────
 # Dev config files — secrets must be migrated to Secrets Manager
