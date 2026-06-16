@@ -63,3 +63,19 @@ GHSA-5c6j-r48x-rmvq
 
 # underscore (fix 1.13.8) - DoS
 CVE-2026-27601
+
+# @grpc/grpc-js (fix 1.9.16) - server crash via malformed request
+CVE-2026-48068
+CVE-2026-48069
+
+# form-data (fix 3.0.5) - prototype pollution
+CVE-2026-12143
+
+# protobufjs (fix 7.6.1) - DoS via unbounded Any
+CVE-2026-48712
+
+# shell-quote (fix 1.8.4) - CRITICAL: arbitrary code execution [no ejecutado en browser]
+CVE-2026-9277
+
+# ws (fix 7.5.11) - Memory exhaustion DoS
+CVE-2026-48779
