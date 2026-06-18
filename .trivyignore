@@ -95,3 +95,14 @@ CVE-2026-29074
 
 # underscore (fix 1.13.8) - DoS
 CVE-2026-27601
+
+# ── Nuevas CVEs 2026-06-18 — riesgo aceptado DEV, revisar 2026-09-08 ──────────
+
+# form-data (fix 2.5.6/3.0.5/4.0.6) - improper input handling
+CVE-2026-12143
+
+# shell-quote (fix 1.8.4) - arbitrary code execution via crafted input
+CVE-2026-9277
+
+# ws (fix 7.5.11/8.21.0) - memory exhaustion DoS from tiny fragments
+CVE-2026-48779
