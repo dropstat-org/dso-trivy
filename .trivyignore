@@ -21,9 +21,10 @@ CVE-2026-42583
 # netty-codec-http2 — fix available in 4.1.132.Final, pending Spring Boot upgrade
 CVE-2026-33871
 
-# netty-handler — fix available in 4.2.15.Final, pending Spring Boot upgrade
+# netty-handler — fix available in 4.2.15.Final / 4.1.135.Final, pending Spring Boot upgrade
 CVE-2026-44249
 CVE-2026-45416
+CVE-2026-50010
 
 # grpc-netty-shaded — fix available in 1.75.0, pending upgrade
 CVE-2025-55163
