@@ -56,6 +56,10 @@ CVE-2026-40973
 # ion-java (AWS SDK transitive) — fix available in 1.10.5, pending SDK upgrade
 CVE-2024-21634
 
+# jackson-databind — fix available in 2.21.4, pending dependency upgrade
+CVE-2026-54512
+CVE-2026-54513
+
 # ── Secret file exceptions ────────────────────────────────────────────────────
 # Dev config files — secrets must be migrated to Secrets Manager
 # These files are excluded from secret scanning until migration is complete.
