@@ -35,3 +35,14 @@ CVE-2026-43513
 
 # ── Secret file exceptions ────────────────────────────────────────────────────
 src/main/resources/application.properties
+
+# nursa-test pipeline onboarding 2026-07-11 - pom.xml HIGH findings
+# jackson-databind 2.17.2 (fix 2.18.8)
+CVE-2026-54512
+CVE-2026-54513
+# netty-handler / netty-resolver-dns 4.1.112.Final
+CVE-2026-44249
+CVE-2026-45416
+CVE-2026-50010
+CVE-2026-45674
+CVE-2026-47691
