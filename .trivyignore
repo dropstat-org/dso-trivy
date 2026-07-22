@@ -46,6 +46,9 @@ CVE-2026-16221
 # js-yaml (fix 3.15.0/4.3.0) - DoS via crafted YAML
 CVE-2026-59869
 
+# svgo (fix 2.8.3/3.3.4/4.0.2) - removeScripts plugin leaves executable scripts intact [no ejecutado en browser, solo build-time]
+GHSA-2p49-hgcm-8545
+
 # jspdf (fix 4.2.1) - LFI/XSS/DoS [CRITICAL CVE-2025-68428]
 CVE-2025-68428
 CVE-2026-31938
