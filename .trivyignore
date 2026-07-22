@@ -60,6 +60,9 @@ CVE-2024-21634
 CVE-2026-54512
 CVE-2026-54513
 
+# jackson-core — fix available in 2.18.8 / 2.21.4 / 2.22.1, pending dependency upgrade
+GHSA-r7wm-3cxj-wff9
+
 # ── Secret file exceptions ────────────────────────────────────────────────────
 # Dev config files — secrets must be migrated to Secrets Manager
 # These files are excluded from secret scanning until migration is complete.
