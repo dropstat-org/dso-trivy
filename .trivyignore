@@ -3,10 +3,13 @@
 #
 # ── CVE exceptions ────────────────────────────────────────────────────────────
 
-# netty-codec-http — fix available in 4.1.132, pending Spring Boot upgrade
+# netty-codec-http — fix available in 4.1.132 / 4.2.16, pending Spring Boot upgrade
 CVE-2026-33870
 CVE-2026-42584
 CVE-2026-42587
+CVE-2026-55831
+CVE-2026-55833
+CVE-2026-56745
 
 # spring-boot-starter-actuator / spring-security — evaluating impact
 CVE-2026-22731
@@ -15,8 +18,9 @@ CVE-2026-22733
 # spring-security-web — CRITICAL, fix available in 6.5.9 pending Spring Boot upgrade
 CVE-2026-22732
 
-# netty-codec — fix available in 4.1.133.Final, pending Spring Boot upgrade
+# netty-codec — fix available in 4.1.133.Final / 4.1.136.Final, pending Spring Boot upgrade
 CVE-2026-42583
+CVE-2026-59901
 
 # netty-codec-http2 — fix available in 4.1.132.Final, pending Spring Boot upgrade
 CVE-2026-33871
