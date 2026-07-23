@@ -1,6 +1,8 @@
 # Trivy exceptions for gha-dropstat-backend
 # Issues are still shown in the report but do not cause pipeline failure.
 #
+# soft_fail: true
+#
 # ── CVE exceptions ────────────────────────────────────────────────────────────
 
 # netty-codec-http — fix available in 4.1.132 / 4.2.16, pending Spring Boot upgrade
