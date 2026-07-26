@@ -106,3 +106,12 @@ CVE-2026-9277
 
 # ws (fix 7.5.11/8.21.0) - memory exhaustion DoS from tiny fragments
 CVE-2026-48779
+
+# ── Nuevas CVEs 2026-07-26 — riesgo aceptado DEV, revisar 2026-09-08 ──────────
+
+# brace-expansion (fix 5.0.7/1.1.16/2.1.2/5.0.8) - ReDoS
+CVE-2026-13149
+CVE-2026-14257
+
+# websocket-driver (fix 0.7.5) - CRITICAL, transitive dep of dev-only tooling
+CVE-2026-54466
