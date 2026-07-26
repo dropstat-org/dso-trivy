@@ -14,6 +14,11 @@
 # excepciones — prioritarias las CRITICAL. NO portar este archivo a staging/prod
 # sin re-evaluar.
 # Format: un CVE/GHSA por linea. Comentario = libreria + fix disponible.
+#
+# soft_fail: true
+# -> Nuevas CVEs no listadas abajo (ej. las de 2026-07-26: brace-expansion,
+#    websocket-driver) solo generan warning, no rompen el pipeline. Igual se
+#    documentan y agregan aca cuando se detectan, para trazabilidad.
 
 
 # @babel/plugin-transform-modules-systemjs (fix 7.29.4)
