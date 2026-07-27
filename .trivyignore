@@ -14,6 +14,11 @@
 # excepciones — prioritarias las CRITICAL. NO portar este archivo a staging/prod
 # sin re-evaluar.
 # Format: un CVE/GHSA por linea. Comentario = libreria + fix disponible.
+#
+# soft_fail: true
+# -> Nuevas CVEs no listadas abajo (ej. las de 2026-07-27: brace-expansion,
+#    postcss) solo generan warning, no rompen el pipeline. Igual se
+#    documentan y agregan aca cuando se detectan, para trazabilidad.
 
 
 # @babel/plugin-transform-modules-systemjs (fix 7.29.4)
@@ -98,3 +103,12 @@ CVE-2026-54466
 
 # ws (fix 7.5.11) - Memory exhaustion DoS
 CVE-2026-48779
+
+# ── Nuevas CVEs 2026-07-27 — riesgo aceptado DEV, revisar 2026-09-08 ──────────
+
+# brace-expansion (fix 5.0.8) - ReDoS
+CVE-2026-14257
+
+# postcss (fix 8.5.12/8.5.18) - arbitrary file read / path traversal via sourceMappingURL
+CVE-2026-45623
+GHSA-r28c-9q8g-f849
