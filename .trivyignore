@@ -24,19 +24,6 @@
 # @babel/plugin-transform-modules-systemjs (fix 7.29.4)
 CVE-2026-44728
 
-# axios (fix 1.16.0) - DoS/prototype-pollution/proxy-auth leak
-CVE-2026-42033
-CVE-2026-42035
-CVE-2026-42043
-CVE-2026-42264
-CVE-2026-44486
-CVE-2026-44487
-CVE-2026-44488
-CVE-2026-44492
-CVE-2026-44494
-CVE-2026-44495
-CVE-2026-44496
-
 # brace-expansion (fix 1.1.16/2.1.2/5.0.7) - DoS
 CVE-2026-13149
 
