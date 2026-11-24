@@ -21,85 +21,9 @@
 #    documentan y agregan aca cuando se detectan, para trazabilidad.
 
 
-# @babel/plugin-transform-modules-systemjs (fix 7.29.4)
-CVE-2026-44728
-
-# axios (fix 1.16.0) - DoS/prototype-pollution/proxy-auth leak
-CVE-2026-42033
-CVE-2026-42035
-CVE-2026-42043
-CVE-2026-42264
-CVE-2026-44486
-CVE-2026-44487
-CVE-2026-44488
-CVE-2026-44492
-CVE-2026-44494
-CVE-2026-44495
-CVE-2026-44496
-
-# brace-expansion (fix 1.1.16/2.1.2/5.0.7) - DoS
-CVE-2026-13149
-
-# fast-uri (fix 3.1.2) - path traversal
-CVE-2026-6321
-CVE-2026-6322
-
-# fast-uri (fix 3.1.3/4.0.1/2.4.2) - security policy bypass / prototype pollution
-CVE-2026-13676
-CVE-2026-16221
-
-# js-yaml (fix 3.15.0/4.3.0) - DoS via crafted YAML
-CVE-2026-59869
-
 # svgo (fix 2.8.3/3.3.4/4.0.2) - removeScripts plugin leaves executable scripts intact [no ejecutado en browser, solo build-time]
 GHSA-2p49-hgcm-8545
-
-# jspdf (fix 4.2.1) - LFI/XSS/DoS [CRITICAL CVE-2025-68428]
-CVE-2025-68428
-CVE-2026-31938
-CVE-2025-29907
-CVE-2025-57810
-CVE-2026-24133
-CVE-2026-24737
-CVE-2026-25535
-CVE-2026-25755
-CVE-2026-25940
-CVE-2026-31898
-
-# protobufjs (fix 8.0.2) - RCE/DoS [CRITICAL CVE-2026-41242]
-CVE-2026-41242
-CVE-2026-44289
-CVE-2026-44290
-CVE-2026-44291
-CVE-2026-44293
 
 # @grpc/grpc-js (fix 1.9.16) - server crash via malformed request
 CVE-2026-48068
 CVE-2026-48069
-
-# form-data (fix 3.0.5) - prototype pollution
-CVE-2026-12143
-
-# protobufjs (fix 7.6.1) - DoS via unbounded Any
-CVE-2026-48712
-
-# shell-quote (fix 1.8.4) - CRITICAL: arbitrary code execution [no ejecutado en browser]
-CVE-2026-9277
-
-# shell-quote (fix 1.9.0) - DoS via parse
-CVE-2026-13311
-
-# websocket-driver (fix 0.7.5) - CRITICAL [no ejecutado en browser]
-CVE-2026-54466
-
-# ws (fix 7.5.11) - Memory exhaustion DoS
-CVE-2026-48779
-
-# ── Nuevas CVEs 2026-07-27 — riesgo aceptado DEV, revisar 2026-09-08 ──────────
-
-# brace-expansion (fix 5.0.8) - ReDoS
-CVE-2026-14257
-
-# postcss (fix 8.5.12/8.5.18) - arbitrary file read / path traversal via sourceMappingURL
-CVE-2026-45623
-GHSA-r28c-9q8g-f849
