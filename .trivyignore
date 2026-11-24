@@ -24,15 +24,6 @@
 # svgo (fix 2.8.3/3.3.4/4.0.2) - removeScripts plugin leaves executable scripts intact [no ejecutado en browser, solo build-time]
 GHSA-2p49-hgcm-8545
 
-# nth-check (fix 2.0.1) - ReDoS
-CVE-2021-3803
-
-# serialize-javascript (fix 7.0.3) - RCE via RegExp.flags
-GHSA-5c6j-r48x-rmvq
-
-# underscore (fix 1.13.8) - DoS
-CVE-2026-27601
-
 # @grpc/grpc-js (fix 1.9.16) - server crash via malformed request
 CVE-2026-48068
 CVE-2026-48069
